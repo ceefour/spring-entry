@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Spring Entry</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <h2>List of Posts</h2>
+        <p th:each="post : ${posts}">
+            <h3>Id:</h3>
+            <div th:text="${post.id}"></div>
+            <h3>Title:</h3>
+            <div th:text="${post.title}"></div>
+            <h3>Content:</h3>
+            <div th:text="${post.content}"></div>
+            <br/><hr/>
+        </p>
+    </body>
+</html>
